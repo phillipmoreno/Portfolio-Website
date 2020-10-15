@@ -213,6 +213,13 @@ body {
       font-size: 2rem;
       color: #fff;
       border-bottom: 2px solid #fff; }
+  #project-page .projects-grid {
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem; }
+    #project-page .projects-grid .project-column {
+      background: #cccccc; }
 
 #contact-page {
   overflow: hidden;
