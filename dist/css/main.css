@@ -14,13 +14,12 @@ body {
   background: #179dff;
   color: #fff;
   border-bottom: 1px solid #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   font-size: 1.1rem;
   display: flex;
   justify-content: space-between; }
   .main-nav ul {
-    display: flex;
-    padding-right: 2.5rem; }
+    display: flex; }
     .main-nav ul li {
       list-style: none;
       padding: 0 0.9rem;
@@ -31,10 +30,6 @@ body {
         font-weight: bold; }
         .main-nav ul li a:hover {
           color: #ffd700; }
-      .main-nav ul li .current {
-        color: #ffd700;
-        border-bottom: 3px #333 solid;
-        padding-bottom: 5px; }
       .main-nav ul li:hover {
         transform: scale(1.1); }
   .main-nav img {
@@ -129,7 +124,7 @@ body {
   height: 100vh;
   background: #cccccc; }
   #about-page .about-header {
-    padding: 2rem;
+    padding: 2rem 2rem 0rem;
     display: block;
     text-align: center; }
     #about-page .about-header h1 {
@@ -141,7 +136,7 @@ body {
     #about-page .about-header p {
       font-family: "Poppins", sans-serif;
       font-size: 1rem;
-      padding: 1rem;
+      padding: 0.8rem;
       display: inline-block;
       text-align: center;
       line-height: 1.35; }
@@ -350,3 +345,322 @@ body {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
+
+@media (max-width: 1024px) {
+  #about-page {
+    font-size: 70%;
+    overflow: hidden;
+    height: 100vh;
+    background: #cccccc; }
+    #about-page .about-header {
+      padding: 2rem 2rem 0rem;
+      display: block;
+      text-align: center; }
+      #about-page .about-header h1 {
+        padding: 0 1rem;
+        display: inline-block;
+        font-size: 1.8rem;
+        color: #000;
+        border-bottom: 2px solid #333; }
+      #about-page .about-header p {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        padding: 0.8rem 0.6rem;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.35; }
+    #about-page .about-grid {
+      justify-content: center;
+      padding: 1rem 0.5rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1.8fr 1.2fr; }
+      #about-page .about-grid .skills-header {
+        padding: 0.2rem 0.2rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; }
+        #about-page .about-grid .skills-header i {
+          padding-left: 0.4rem;
+          text-shadow: 1px 1px 1.2px #fff; }
+      #about-page .about-grid .technical-skills {
+        border-left: 1px solid #333;
+        border-right: 1px solid #333; }
+        #about-page .about-grid .technical-skills .technical-skills-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); }
+          #about-page .about-grid .technical-skills .technical-skills-grid .skill-box {
+            padding-bottom: 1rem;
+            align-items: center;
+            text-align: center; }
+            #about-page .about-grid .technical-skills .technical-skills-grid .skill-box .skills-img {
+              transition: all 0.2s ease-in-out; }
+              #about-page .about-grid .technical-skills .technical-skills-grid .skill-box .skills-img img {
+                padding: 0.5rem;
+                margin: auto;
+                width: auto;
+                height: 82px;
+                display: block;
+                object-fit: cover; }
+              #about-page .about-grid .technical-skills .technical-skills-grid .skill-box .skills-img:hover {
+                transform: scale(1.2); }
+      #about-page .about-grid .my-education,
+      #about-page .about-grid .other-skills,
+      #about-page .about-grid .technical-skills {
+        padding: 0 0.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; }
+  #project-page .project-header {
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    #project-page .project-header h1 {
+      padding: 0 1rem;
+      display: inline-block;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #000; }
+  #project-page .projects-grid {
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6rem; }
+    #project-page .projects-grid .project-column {
+      font-size: 65%;
+      padding: 1rem 0.25rem;
+      background: #333;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      height: calc(40vh - 10px); }
+      #project-page .projects-grid .project-column .project-flex {
+        padding: 0.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #project-page .projects-grid .project-column .project-flex .project-image img {
+          border-radius: 10px;
+          padding: 0.1rem;
+          width: auto;
+          height: 120px; }
+        #project-page .projects-grid .project-column .project-flex .project-description {
+          display: block;
+          font-family: "Poppins", sans-serif;
+          padding: 1rem 0rem;
+          color: #fff; }
+          #project-page .projects-grid .project-column .project-flex .project-description h3,
+          #project-page .projects-grid .project-column .project-flex .project-description h4 {
+            text-align: center; }
+        #project-page .projects-grid .project-column .project-flex li {
+          padding: 0.15rem 0; }
+  #contact-page .contact-header h1 {
+    font-size: 1.8rem; } }
+
+@media (max-width: 540px) {
+  .main-nav {
+    padding: 0.6rem 1rem 0.6rem;
+    font-size: 1rem;
+    display: block; }
+    .main-nav ul {
+      padding-top: 0.7rem;
+      display: flex; }
+      .main-nav ul li {
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0 1rem; }
+    .main-nav .title h1 {
+      font-size: 1.1rem; }
+    .main-nav .title .role h5 {
+      font-size: 0.6rem; }
+    .main-nav .title .role img {
+      height: 15px;
+      width: 15px; }
+  #home-page {
+    font-size: 60%; }
+    #home-page .portrait {
+      padding: 10rem 0;
+      display: block; }
+      #home-page .portrait img {
+        width: 16rem; }
+      #home-page .portrait .btn {
+        padding: 0.4rem 0.4rem; }
+      #home-page .portrait .home-about-btn {
+        transform: scale(0);
+        animation: imgScaleUp ease-out 0.6s;
+        animation-delay: 1.6s;
+        animation-fill-mode: forwards; }
+  #about-page .about-header {
+    padding: 1rem 1rem 0rem; }
+    #about-page .about-header h1 {
+      border-bottom: 1px solid #000;
+      padding: 0 0.5rem;
+      font-size: 1rem; }
+    #about-page .about-header p {
+      font-size: 0.45rem;
+      padding: 0.4rem 0.1rem 0rem;
+      line-height: 1.15; }
+  #about-page .about-grid {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-areas: "technical-skills technical-skills" "my-education other-skills";
+    grid-template-columns: repeat(2, 1fr); }
+    #about-page .about-grid .skills-header {
+      padding: 0.3rem 0.2rem 0.2rem;
+      margin-bottom: 2px; }
+    #about-page .about-grid .technical-skills {
+      grid-area: technical-skills;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #000; }
+      #about-page .about-grid .technical-skills .technical-skills-grid {
+        padding-bottom: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); }
+        #about-page .about-grid .technical-skills .technical-skills-grid .skill-box {
+          padding-bottom: 0.2rem; }
+          #about-page .about-grid .technical-skills .technical-skills-grid .skill-box .skills-img img {
+            padding: 0.4rem;
+            height: 50px; }
+    #about-page .about-grid .my-education {
+      grid-area: my-education;
+      border-right: 1px solid #000; }
+    #about-page .about-grid .other-skills {
+      grid-area: other-skills; }
+    #about-page .about-grid .my-education,
+    #about-page .about-grid .other-skills,
+    #about-page .about-grid .technical-skills {
+      padding: 0 0.89rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto; }
+    #about-page .about-grid ul {
+      padding: 0rem;
+      margin: 0; }
+      #about-page .about-grid ul li {
+        padding-bottom: 0.1rem; }
+        #about-page .about-grid ul li ul {
+          padding: 0.1rem 1rem; }
+          #about-page .about-grid ul li ul li {
+            padding-bottom: 0.1rem; }
+  #project-page .project-header {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    #project-page .project-header h1 {
+      padding: 0 1rem;
+      display: inline-block;
+      font-size: 1rem;
+      border-bottom: 1px solid #000; }
+  #project-page .projects-grid {
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6rem; }
+    #project-page .projects-grid .project-column {
+      font-size: 43%;
+      padding: 0.7rem 0.25rem;
+      background: #333;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      height: calc(40vh - 10px); }
+      #project-page .projects-grid .project-column .project-flex {
+        padding: 0.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #project-page .projects-grid .project-column .project-flex .project-image img {
+          border-radius: 10px;
+          padding: 0.1rem;
+          width: auto;
+          height: 78px; }
+        #project-page .projects-grid .project-column .project-flex .project-description {
+          display: block;
+          font-family: "Poppins", sans-serif;
+          padding: 0.5rem 0rem;
+          color: #fff; }
+          #project-page .projects-grid .project-column .project-flex .project-description h3,
+          #project-page .projects-grid .project-column .project-flex .project-description h4 {
+            text-align: center; }
+        #project-page .projects-grid .project-column .project-flex li {
+          padding: 0.15rem 0; }
+  #contact-page {
+    overflow: hidden;
+    height: 70vh;
+    background-color: #cccccc;
+    text-align: center; }
+    #contact-page .contact-header {
+      display: block;
+      padding: 1rem 0.5rem; }
+      #contact-page .contact-header h1 {
+        display: inline-block;
+        font-size: 1rem;
+        color: #000;
+        border-bottom: 1px solid #333; }
+      #contact-page .contact-header p {
+        font-family: "Poppins", sans-serif;
+        padding: 0.8rem 1rem 1rem;
+        font-size: 0.6rem;
+        display: block;
+        text-align: center;
+        line-height: 1.4; }
+    #contact-page .fill-out-form {
+      display: block;
+      padding: 0 1rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      #contact-page .fill-out-form input,
+      #contact-page .fill-out-form textarea {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.6rem;
+        border: 0;
+        border-radius: 5px;
+        padding: 0.4rem 0.4rem;
+        width: 85%;
+        margin-bottom: 0.5rem; }
+        #contact-page .fill-out-form input:focus,
+        #contact-page .fill-out-form textarea:focus {
+          outline: none; }
+      #contact-page .fill-out-form .submit-button {
+        display: inline-block;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.6rem 0.6rem;
+        background: #179dff; }
+        #contact-page .fill-out-form .submit-button:hover {
+          color: #ffd700; }
+  .main-footer {
+    text-align: center;
+    background: #179dff;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem 2rem; }
+    .main-footer .footer-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main-footer .footer-icons a {
+        font-size: 0.8rem;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.2rem 1rem 0.7rem;
+        transition: all 0.2s ease-in-out; }
+        .main-footer .footer-icons a:hover {
+          transform: scale(1.1);
+          color: #ffd700; }
+    .main-footer h6 {
+      font-size: 0.5rem; } }

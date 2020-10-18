@@ -24,14 +24,13 @@ body {
   background: $primary_color;
   color: #fff;
   border-bottom: 1px solid #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
 
   ul {
     display: flex;
-    padding-right: 2.5rem;
 
     li {
       list-style: none;
@@ -46,12 +45,6 @@ body {
         &:hover {
           color: $current_color;
         }
-      }
-
-      .current {
-        color: $current_color;
-        border-bottom: 3px #333 solid;
-        padding-bottom: 5px;
       }
 
       &:hover {
@@ -194,7 +187,7 @@ body {
   background: $secondary_color;
 
   .about-header {
-    padding: 2rem;
+    padding: 2rem 2rem 0rem;
     display: block;
     text-align: center;
 
@@ -209,7 +202,7 @@ body {
     p {
       font-family: "Poppins", sans-serif;
       font-size: 1rem;
-      padding: 1rem;
+      padding: 0.8rem;
       display: inline-block;
       text-align: center;
       line-height: 1.35;
@@ -508,3 +501,5 @@ body {
     transform: scale(1);
   }
 }
+
+@import "media";
