@@ -506,7 +506,7 @@ body {
       padding: 0.4rem 0.1rem 0rem;
       line-height: 1.15; }
   #about-page .about-grid {
-    font-size: 0.5rem;
+    font-size: 0.47rem;
     padding: 0.5rem;
     display: grid;
     grid-template-areas: "technical-skills technical-skills" "my-education other-skills";
@@ -544,7 +544,7 @@ body {
       padding: 0rem;
       margin: 0; }
       #about-page .about-grid ul li {
-        padding-bottom: 0.1rem; }
+        padding-bottom: 0.09rem; }
         #about-page .about-grid ul li ul {
           padding: 0.1rem 1rem; }
           #about-page .about-grid ul li ul li {
@@ -568,8 +568,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.6rem; }
     #project-page .projects-grid .project-column {
-      font-size: 43%;
-      padding: 0.7rem 0.25rem;
+      overflow: auto;
+      font-size: 41%;
+      padding: 0.7rem 0.1rem;
       background: #333;
       border-radius: 10px;
       border: 2px solid #fff;
