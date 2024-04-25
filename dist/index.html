@@ -26,7 +26,7 @@
   />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
-  <title>Phillip Moreno | Software Developer</title>
+  <title>Phillip Moreno | Software Engineer</title>
   </head>
   <body>
     <header id="header-home">
@@ -35,7 +35,7 @@
             <div class="title">
               <h1>Phillip Moreno</h1>
               <div class="role">
-                <h5>Software Developer</h5>
+                <h5>Software Engineer</h5>
                 <img src="img/favicon/favicon-32x32.png" alt="">
               </div>
           </div>
@@ -53,7 +53,7 @@
       <div class="portrait">
         <img src="img/portrait_3_1.jpg" alt="Portrait">
         <h1 class="hello-world">System.<span class="out-print">out</span>.println(<span class="text-print">"Hello World! My Name is Phillip"</span>);</h1>
-        <h3 class="description">...and I have a passion for Software Development<i class="fas fa-code"></i></h3>
+        <h3 class="description">...and I have a passion for Full Stack Development<i class="fas fa-code"></i></h3>
         <h4 class="home-location">Austin, TX<i class="fas fa-map-marker-alt"></i></h4>
         <a href="#about-page" class="btn home-about-btn">Learn More About Me</a>
       </div>
@@ -62,18 +62,18 @@
     <section id="about-page">
       <div class="about-header">
         <h1>Let Me Tell You A Bit About Myself <i class="far fa-grin-beam"></i></h1>
-        <p>I am a 26-year-old Software Developer from Long Island, New York that now resides in Austin, Texas. Whether it's creating a website from scratch or developing a mobile application, the fulfillment and joy I get from problem solving and programming is unmatched! Throughout the years I have gained professional, academic, and personal experience in various different programming languages, frameworks, and databases across the stack. Some of these technologies include Java, JavaScript, Angular, .NET Framework, Firebase, Postgres, and much more.</p>
+        <p>I am a 27-year-old Software Engineer from Long Island, New York that now resides in Austin, Texas. Whether it's creating a website from scratch or developing a mobile application, the fulfillment and joy I get from problem solving and programming is unmatched! Throughout the years I have gained professional, academic, and personal experience in various different programming languages, frameworks, and databases across the stack. Some of these technologies include Java, JavaScript, Angular, .NET Framework, Firebase, Postgres, and much more.</p>
       </div>
       <div class="skills">
         <div class="about-grid">
           <div class="work-experience">
             <h1 class="skills-header">Relevant Work Experience<i class="fas fa-briefcase"></i></h1>
             <ul class="college-list">
-              <li><h4>Software Developer</h4><h5>General Motors<i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;Austin, TX<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;May 2022 - Present<i class="fas fa-clock"></i></h5><ul>
+              <li><h4>Software Engineer</h4><h5>General Motors<i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;Austin, TX<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;May 2022 - Present<i class="fas fa-clock"></i></h5><ul>
                 <li><h5>Designed, developed, and implemented feature releases based on business requirements, enhancing software functionality and user satisfaction.</h5></li>
                 <li><h5>Investigated and resolved complex production bugs and pipeline issues promptly, ensuring minimal disruption to product functionality and user experiences.</h5></li>
                 <li><h5>Conducted comprehensive unit testing on both the user interface and backend services of supported applications to ensure code quality and reduce defects in production.</h5></li>
-                <li><h5>Demonstrated leadership skills as interim development lead by providing mentorship to new team members, as well as allocating resources to ensure project timelines and deliverables are met.</h5></li>
+                <li><h5>Demonstrated leadership skills as development lead by providing mentorship to new team members, as well as allocating resources to ensure project timelines and deliverables are met.</h5></li>
               </ul></li>
               <li><h4>Code Coach</h4><h5>The Coder School<i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;&nbsp;Syosset, NY<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;March 2021 - June 2021<i class="fas fa-clock"></i></h5><ul>
                 <li><h5>Tutored and mentored students, from ages ranging 5 to 16 years old, in programming concepts through project-based lessons. Students first learned fundamental concepts on Scratch before moving to an Online IDE.</h5></li>
@@ -333,7 +333,7 @@
         <a target="_blank" href="https://www.linkedin.com/in/phillip-moreno-72b61b1aa/"><i class="fab fa-linkedin fa-3x"></i></a>
         <a href = "mailto: phillipmoreno123@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
       </div>
-      <h6>Copyright &copy; 2023 - Phillip Moreno</h6>
+      <h6>Copyright &copy; 2024 - Phillip Moreno</h6>
     </footer>
   </body>
 
@@ -348,12 +348,16 @@
   
       window.onscroll = function(){
         if(window.pageYOffset > 100) {
-          navbar.classList.remove('top');
-          if(!scrolled) {
+          if(navbar != null && navbar.classList.contains('top')){
+            navbar.classList.remove('top');
+          }
+          if(!scrolled && navbar != null) {
             navbar.style.transform = 'translateY(-70px)';
           }
           setTimeout(function(){
-            navbar.style.transform = 'translateY(0)';
+            if(navbar != null){
+              navbar.style.transform = 'translateY(0)';
+            }
             scrolled = true;
           }, 200);
         }else{
