@@ -117,7 +117,8 @@ body {
       transform: scale(0);
       animation: imgScaleUp ease-out 0.6s;
       animation-delay: 1.6s;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      border: 1px solid white; }
 
 #about-page {
   overflow: hidden;
