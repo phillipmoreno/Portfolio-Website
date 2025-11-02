@@ -63,14 +63,14 @@ body {
     text-align: center; }
     #home-page .portrait .hello-world {
       position: relative;
-      right: 1500px;
+      right: 2000px;
       animation: slideIn ease 0.8s;
       animation-delay: 0.6s;
       animation-fill-mode: forwards;
       color: #d7eef4; }
     #home-page .portrait .description {
       position: relative;
-      left: 1500px;
+      left: 2000px;
       animation: slideInTwo ease 0.8s;
       animation-delay: 0.6s;
       animation-fill-mode: forwards; }
@@ -320,13 +320,13 @@ body {
 
 @keyframes slideIn {
   0% {
-    right: 1500px; }
+    right: 2000px; }
   100% {
     right: 0px; } }
 
 @keyframes slideInTwo {
   0% {
-    left: 1500px; }
+    left: 2000px; }
   100% {
     left: 0px; } }
 
